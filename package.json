@@ -1,0 +1,64 @@
+{
+  "name": "react-styled-loading-skeleton",
+  "version": "1.0.0",
+  "description": "Animated loading skeleton on styled-components based.",
+  "type": "module",
+  "main": "dist/index.umd.cjs",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
+  "keywords": [
+    "react",
+    "styled-components",
+    "styled",
+    "loading",
+    "skeleton"
+  ],
+  "author": {
+    "name": "Yaroslav Sveshnikov",
+    "email": "sy.v@mail.ru"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nullorone/react-styled-loading-skeleton"
+  },
+  "homepage": "https://github.com/nullorone/react-styled-loading-skeleton#readme",
+  "scripts": {
+    "start": "PUBLIC_URL=/ vite",
+    "build": "rm -rf dist && tsc -b && vite build && npm run build:types",
+    "build:types": "./node_modules/.bin/tsc --project ./tsconfig.types.json --jsx react-jsx",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.9.0",
+    "@types/node": "22.5.0",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "@vitejs/plugin-react": "4.3.1",
+    "eslint": "9.9.0",
+    "eslint-plugin-react-hooks": "5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "0.4.9",
+    "globals": "15.9.0",
+    "prettier": "3.3.3",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "styled-components": "6.1.12",
+    "typescript": "5.5.3",
+    "typescript-eslint": "8.0.1",
+    "vite": "5.4.1",
+    "vite-plugin-dts": "4.0.3"
+  },
+  "peerDependencies": {
+    "react": ">=18.3.1",
+    "styled-components": ">=6.1.12"
+  },
+  "license": "MIT"
+}
