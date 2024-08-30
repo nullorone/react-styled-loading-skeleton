@@ -18,6 +18,10 @@ Install the package via npm:
 
 `npm install --save react-styled-loading-skeleton`
 
+### Demo
+
+You can check storybook live [demo](https://nullorone.github.io/react-styled-loading-skeleton-examples/)
+
 ### Use
 
 Once installed, import the component and use it in your app:
