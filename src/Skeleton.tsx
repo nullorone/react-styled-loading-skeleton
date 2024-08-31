@@ -1,5 +1,5 @@
 import { Wrapper } from './Skeleton.styled';
-import { memo, CSSProperties } from 'react';
+import { CSSProperties } from 'react';
 
 export interface SkeletonProps {
   width?: number;
@@ -25,7 +25,7 @@ export interface SkeletonProps {
   style?: CSSProperties;
 }
 
-function Skeleton({ count, flex, ...props }: SkeletonProps) {
+export function Skeleton({ count, flex, ...props }: SkeletonProps) {
   if (count) {
     return (
       <div
@@ -86,7 +86,3 @@ function Item({
     </Wrapper>
   );
 }
-
-const MemoizableSkeleton = memo(Skeleton);
-
-export { MemoizableSkeleton as Skeleton };
